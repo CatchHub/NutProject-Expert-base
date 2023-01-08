@@ -1,0 +1,16 @@
+{
+  "bmi": 19.75,
+  "bodyStateGroup": "Almost Normal",
+  "acceptableBmi": "BMI: 19-24",
+  "recommendedCalorieIntake": 1992.0,
+  "recommendedProteinIntake": 51.2,
+  "restrictedFoods": [
+    "Kuru baklagiller ve kepekli tah\u0131llardan uzak durunuz.",
+    "\u00c7i\u011f sebze ve meyve t\u00fcketmeyiniz",
+    "Esmer ekmek t\u00fcketmeyiniz.",
+    "Yo\u011furt ve ya\u011fl\u0131 ayran t\u00fcketmeyiniz.",
+    "Ya\u011fl\u0131 g\u0131dalardan uzak durunuz.",
+    "\u015eeker ve \u015fekerli besinlerden uzak durunuz.",
+    "Haz\u0131r meyve sular\u0131, asitli i\u00e7ecekler, kahve ve kakao t\u00fcketmeyiniz."
+  ]
+}

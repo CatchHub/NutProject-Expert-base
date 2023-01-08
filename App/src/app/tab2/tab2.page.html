@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true" class='background-image'>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Diet Blogs
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ng-container *ngIf="Blogs; else elseTemplate">
+    <ion-card button *ngFor="let blog of Blogs">
+      <ion-card-title>{{blog.name}}</ion-card-title>
+      <ion-card-subtitle>{{blog.link.substring(0, 35)}}</ion-card-subtitle>
+      <ion-card-content>{{blog.description}}</ion-card-content>
+    </ion-card>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <ion-text>There were no related blog found.</ion-text>
+    <!-- <ion-text>Please add one...</ion-text> -->
+  </ng-template>
+</ion-content>

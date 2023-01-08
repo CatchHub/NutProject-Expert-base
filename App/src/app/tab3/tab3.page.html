@@ -1,0 +1,32 @@
+<ion-header>
+</ion-header>
+<ion-content class="background-image">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title class="ion-text-center" size="large">
+        Your Profiles
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large" class='center'> </ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+
+  <ng-container *ngIf="Profiles; else elseTemplate">
+    <ion-item button *ngFor="let profile of Profiles" class='profileCard' [routerLink]="['/profile-settings']"
+      (click)="selectProfile(profile.id)">
+      <ion-title>{{profile.name}}</ion-title>
+    </ion-item>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <ion-text>There were no registered profiles found.</ion-text>
+    <!-- <ion-text>Please add one...</ion-text> -->
+  </ng-template>
+  <ion-button class='addBtn' (click)='openModal()'>
+    <ion-icon name="add"></ion-icon>
+  </ion-button>
+</ion-content>

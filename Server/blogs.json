@@ -1,0 +1,39 @@
+{
+  "diseases": [
+    {
+      "name": "Warning Signs of Heart Disease",
+      "description": "I you want to learn more about heart diseases or hearth health tips, visit.",
+      "link": "https://www.lisanelsonrd.com/blog/"
+    },
+    {
+      "name": "Colestherol",
+      "description": "MyHeart contains lots of articles and podcasts provided fron actual professionals about hearth health, visit.",
+      "link": "https://myheart.net/articles/"
+    },
+    {
+      "name": "Kidney Disease",
+      "description": "If you already have a kidney disesase or suspect you are going that way, visit and gain knowledge about how to live with it and everything related.",
+      "link": "https://www.nhs.uk/conditions/kidney-disease/living-with/#:~:text=A%20healthy%2C%20balanced%20diet%20can,wholegrain%20bread%2C%20rice%20or%20pasta"
+    },
+    {
+      "name": "Liver Disease",
+      "description": "If you already have a liver disesase or suspect you are going that way, visit and gain knowledge about how to live with it and everything related.",
+      "link": "https://my.clevelandclinic.org/health/diseases/17179-liver-disease#:~:text=The%20term%20%E2%80%9Cliver%20disease%E2%80%9D%20refers,can%20no%20longer%20function%20properly"
+    },
+    {
+      "name": "Diarrhea",
+      "description": "Diarrhea is very common but can be dangerous. Visit and learn how to prevent and cure diarrhea.",
+      "link": "https://www.mayoclinic.org/diseases-conditions/diarrhea/symptoms-causes/syc-20352241#:~:text=Diarrhea%20%E2%80%94%20loose%2C%20watery%20and%20possibly,more%20than%20a%20few%20days"
+    },
+    {
+      "name": "Gallbladder Disease",
+      "description": "Visit to learn more about gallbladder diseases and how to prevent it.",
+      "link": "https://www.hopkinsmedicine.org/health/conditions-and-diseases/gallbladder-disease#:~:text=What%20is%20gallbladder%20disease%3F,bile%20produced%20in%20the%20liver"
+    },
+    {
+      "name": "Diabetes",
+      "description": "A guide article by WHO, check for learn more about diabetes.",
+      "link": "https://www.who.int/news-room/fact-sheets/detail/diabetes"
+    }
+  ]
+}

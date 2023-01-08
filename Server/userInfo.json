@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "gfhfgh",
+      "weight": "65",
+      "height": "166",
+      "gender": "Male",
+      "age": "35",
+      "activity": "Medium",
+      "diseases": [
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 2,
+      "name": "burak",
+      "weight": "64",
+      "height": "180",
+      "gender": "Male",
+      "age": "22",
+      "activity": "Low",
+      "diseases": [
+        false,
+        false,
+        false,
+        false,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "id": 3,
+      "name": "umut",
+      "weight": "90",
+      "height": "184",
+      "gender": "Male",
+      "age": "22",
+      "activity": "High",
+      "diseases": [
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false
+      ]
+    }
+  ]
+}

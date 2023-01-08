@@ -1,0 +1,37 @@
+.profileCard {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  // --background: rgb(199, 187, 187);
+  --border-radius: 40px;
+  --background: transparent;
+  --border-color: rgb(147, 147, 205);
+  --border-width: 1px;
+}
+ion-header {
+  --background: none;
+  ion-toolbar {
+    --background: none;
+    ion-title {
+      --background: none;
+    }
+  }
+}
+.addBtn {
+  // --background: transparent;
+  width: 30vw;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  --background: transparent;
+  // --border-radius: 40px !important;
+  // --border-color: red !important;
+  // --border-width: 10px !important;
+  color: rgb(166, 255, 0);
+  --background-activated: rgb(161, 140, 140);
+}
+
+ion-content.background-image {
+  --background: url(../../assets/images/backgroundIMG.jpeg) 0 0/100% 100%
+    no-repeat;
+}

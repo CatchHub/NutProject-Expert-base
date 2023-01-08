@@ -1,0 +1,23 @@
+ion-tabs {
+  ion-tab-bar {
+    // --background: rgb(95, 197, 220);
+    --background: #8f62f1;
+    ion-tab-button {
+      ion-icon {
+        color: white;
+      }
+      ion-label {
+        color: white;
+      }
+    }
+
+    ion-tab-button.tab-selected {
+      ion-icon {
+        color: rgb(166, 255, 0);
+      }
+      ion-label {
+        color: wheat !important;
+      }
+    }
+  }
+}

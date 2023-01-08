@@ -1,0 +1,40 @@
+ion-grid {
+  --background: rgb(196, 121, 121);
+}
+
+ion-menu {
+  --ion-background-color: var(--ion-color-primary);
+  --ion-text-color: var(--ion-color-primary-contrast);
+}
+
+ion-checkbox {
+  --checkmark-color: #16ab47 !important;
+  --background-checked: #ffffff !important;
+  --checkmark-color: #16ab47 !important;
+  --border-color: #16ab47 !important;
+  --border-color-checked: #16ab47 !important;
+}
+
+.expert-text {
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: cornflowerblue;
+  font-weight: 500;
+}
+.multi-select {
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: cornflowerblue;
+  font-weight: 300;
+}
+.submitBtn {
+  --background: rgb(22, 171, 71); // 16ab47
+  --background-activated: rgb(161, 140, 140);
+}
+.backBtn {
+  color: rgb(166, 255, 0);
+}
+ion-content.background-image {
+  --background: url(../../assets/images/backgroundIMG.jpeg) 0 0/100% 100%
+    no-repeat;
+}

@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button class='backBtn'>
+        [icon]="Geri">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Profili Düzenle</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+
+        <ion-item>
+          <ion-label position="floating">İsim Soyisim</ion-label>
+          <ion-input [formControl]="$any(profileForm).controls['name']" placeholder="Abdurrahman Köker">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+
+      <ion-col size="6">
+
+        <ion-item>
+          <ion-label position="floating">Yaş</ion-label>
+          <ion-input [formControl]="$any(profileForm).controls['age']" placeholder="Kel ama 24">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+
+        <ion-item>
+          <ion-label position="floating">Boy</ion-label>
+          <ion-input [formControl]="$any(profileForm).controls['height']" placeholder="173">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item>
+          <ion-label position="floating">Kilo</ion-label>
+          <ion-input [formControl]="$any(profileForm).controls['weight']" placeholder="87">
+          </ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label class="multi-select" position="floating">Cinsiyet</ion-label>
+            <ion-select [(ngModel)]="gender" [formControl]="$any(profileForm).controls.gender" interface="action-sheet"
+              cancelText="İptal">
+              <ion-select-option value="Female">Kadın</ion-select-option>
+              <ion-select-option value="Male">Erkek</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+      <ion-col>
+        <ion-list>
+          <ion-item>
+            <ion-label class="multi-select" position="floating">Aktivite Seviyesi</ion-label>
+            <ion-select [(ngModel)]="activityLevel" [formControl]="$any(profileForm).controls.activityLevel"
+              interface="action-sheet" placeholder="Haftada 2 halısaha..." cancelText="İptal">
+              <ion-select-option value="Low">Az</ion-select-option>
+              <ion-select-option value="Medium">Orta</ion-select-option>
+              <ion-select-option value="High">Çok</ion-select-option>
+              <ion-select-option value="Extreme">Ekstrem</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-padding">
+      <ion-label position="floating"> Hastalıklarınız </ion-label>
+
+    </ion-row>
+    <ion-row class="ion-padding">
+      <ion-col size="6" *ngFor="let diseaseACtrl of profileForm.controls['diseasesArea']['controls']; let i=index;">
+        <ion-item>
+          <ion-checkbox [formControl]="diseaseACtrl" (click)="null"> </ion-checkbox>
+          &nbsp; {{diseasesArea[i].name}}
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <ion-row align-items-center>
+      <ion-col offset="5">
+        <ion-button class="submitBtn" (click)="submitForm()">Kaydet </ion-button>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

@@ -1,0 +1,90 @@
+<!-- <p>
+  add-profile-modal works!
+</p>
+
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-list>
+
+        <ion-item>
+          <ion-label class="expert-text" position="floating">{{'EXPERT.expertise' }}</ion-label>
+          <ion-select [(ngModel)]="expertSelection" [formControl]="profileForm.controls.expertise"
+            interface="action-sheet" placeholder="{{'EXPERT.selectExpert' }}">
+            <ion-select-option value="psychologist">{{'EXPERT.psychologist' }}</ion-select-option>
+            <ion-select-option value="sportTrainer">{{'EXPERT.sportTrainer' }}</ion-select-option>
+            <ion-select-option value="yogaInstructor">{{'EXPERT.yogaInstructor' }}</ion-select-option>
+            <ion-select-option value="dietitian">{{'EXPERT.dietitian' }}</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="6">
+
+      <ion-item>
+        <ion-label position="floating">{{"PROFILE.firstName" }}</ion-label>
+        <ion-input [formControl]="profileForm.controls.firstName" placeholder="{{userName}}">
+        </ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">{{"PROFILE.lastName" }}</ion-label>
+        <ion-input [formControl]="profileForm.controls.lastName" placeholder="{{userSurname}}">
+        </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">{{"PROFILE.email" }}</ion-label>
+        <ion-input type="text" value="{{userMail}}" readonly>
+        </ion-input>
+      </ion-item>
+    </ion-col>
+    <ion-col size="6">
+      <ion-item>
+        <ion-label position="floating">{{"PROFILE.mobilePhone" }}</ion-label>
+        <ion-input class="phoneNumber" [formControl]="profileForm.controls.mobilePhone" placeholder="5382750055">
+        </ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-item>
+      <ion-label position="floating"></ion-label>
+      <ion-textarea rows="6" cols="150" [formControl]="profileForm.controls.introduceYourself"
+        placeholder="{{'PROFILE.introduceYourself' }}"></ion-textarea>
+    </ion-item>
+  </ion-row>
+
+  <ion-row class="ion-padding">
+    <ion-label position="floating"> {{"PROFILE.areaOfExpertise" }} </ion-label>
+
+  </ion-row>
+  <ion-row class="ion-padding">
+    <ion-col size="4" *ngFor="let expertACtrl of profileForm.controls.expertAreas['controls']; let i=index;">
+      <ion-item>
+        <ion-checkbox [formControl]="expertACtrl" (click)="null"> </ion-checkbox>
+        &nbsp; {{expertAreas[i].name}}
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+
+
+
+  <ion-row align-items-center>
+    <ion-col offset="5">
+      <ion-button class="submitBtn" (click)="submitForm()"> {{'BUTTONS.save' }} </ion-button>
+    </ion-col>
+
+  </ion-row>
+
+</ion-grid> -->
